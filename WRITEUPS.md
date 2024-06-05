@@ -19,6 +19,7 @@ First we use `file` command to see the type of file.
 cat.jpg: JPEG image data, JFIF standard 1.02, aspect ratio, density 1x1, segment length 16, baseline, precision 8, 2560x1598, components 3
 ```
 As we can see this is JPEG format and nothing is interesting here.
+
 Now,we see the metadata of this file using `exiftool`.This tool helps us to read,write and edit metadata.
 ```shell
 ┌──(rinshu㉿kali)-[~/Downloads]
@@ -54,14 +55,24 @@ Image Size                      : 2560x1598
 Megapixels                      : 4.1
 
 ```
-Here everything is right but the thing here is License which is little bit weird.The license string doesn't look like license.This mixture of uppercase lowercase letters,number.May be this is a base64 encoded data.
-We can decode this string using `base64` command with `-d` parameter to decode.First we print the string using `echo` command and then use `base64 -d`
+Here everything is right but the thing here is License which is little bit weird.The license string doesn't look like license.This is the mixture of uppercase lowercase letters,number.
+
+May be this is a base64 encoded data.
+
+We can decode this string using `base64` command with `-d` parameter to decode.
+
+First we print the string using `echo` command and then use `base64 -d`
 
 ```shell
 ┌──(rinshu㉿kali)-[~/Downloads]
 └─$ echo cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9 | base64 -d
 picoCTF{the_m3tadata_1s_modified}  
 ```
-And here we got our flag as `**picoCTF{the_m3tadata_1s_modified}**`
+And here we got our flag as **`picoCTF{the_m3tadata_1s_modified}`**
+
+---
+
+
+
 
 
