@@ -252,11 +252,39 @@ We have to check the hexvalue of file and edit it with `hexedit` command.
 First we see the format of hex values i.e. signature,sixe of file,offset,etc. of BMP file on google.
 
 ![Image](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeup_files/Screenshot_2024-06-06_20-31-20.png)
-![Image]()
+![Image](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeup_files/Screenshot_2024-06-06_20-32-16.png)
 
-As this searching suggests that how much bytes particular function take.
+As this searching suggests that how much bytes particular function take.From this information we can easily identify which byte is dedicated to which function.
 
-Now we check the hexvalue of the file and edit it where needed.
+Now we check the hexvalue of the file and edit it where needed using `hexedit` command.
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ hexedit tunn3l_v1s10n1
+
+```
+![Old hex value]()
+Here the signature is correct `42 4D`. The offset mainly have 54 bytes value(36 00 00 00).But here it is not correct.So we change `BA D0` to `36 00`.
+
+There are more errors in this.The header size must be of 40 bytes (28 00 00 00).
+
+After modifying the hex value we save this by pressing **F2** key.
+![New hex value]()
+After this we check the image again in image viewer.
+Now the image is showing but we don't get the flag as this flag is fake.But the image seems like it is more.
+![Fake flag image]()
+
+We have to increase the height of image using `hexedit` again.
+
+We can easily identify where the height value is, using above reference.
+we change `32 01` to a increased size,let `32 04` and press F2.
+![Increased height hex value]()
+If we open our Image now it gives us the flag although the height of image is nor perfect but doesn't matter.
+![Final image of flag]()
+Here we got our flag as **`picoCTF{qu1t3_a_v13w_2020}`**
+
+---
+
+
 
 
 
