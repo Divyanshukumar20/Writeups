@@ -239,6 +239,28 @@ We found this [file](tunn3l_v1s10n (1)). Recover the flag.
 
 ##### Writeup:
 
+After Downloading the file we open it using image viewer.
+
+Here the image can't be open as image viewer shows that BMP image has unsupported header size.
+
+![Image](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeup_files/Screenshot_2024-06-06_19_33_53.png)
+
+It means that there is something error in hex value of Bitmap header format.
+
+We have to check the hexvalue of file and edit it with `hexedit` command.
+
+First we see the format of hex values i.e. signature,sixe of file,offset,etc. of BMP file on google.
+
+![Image]()
+![Image]()
+
+As this searching suggests that how much bytes particular function take.
+
+Now we check the hexvalue of the file and edit it where needed.
+
+
+
+
 
 
 
