@@ -548,6 +548,7 @@ Thus our flag is **`picoCTF{3nh4nc3d_d0a757bf}`**
 
 ##### Challenge Description:
 Ron just found his own copy of advanced potion making, but its been corrupted by some kind of spell. Help him recover it!
+
 [advance-potion-making](advance-potion-making)
 
 ##### Writeup:
@@ -605,11 +606,11 @@ The new hex values are:
 ```
 But still if we try to open the image using image viewer it shows us *Invalid IHDR length*.
 
-! [Invalid IHDR length image]()
+![Invalid IHDR length image](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeup_files/Screenshot_2024-06-07_01_53_58.png)
 
 After some google we got to know that the Length of IHDR have this format (00 00 00 0D) and located in 13 bytes.
 
-So we again change the Hexvalue usin `hexedit` command and got the new hex value as:
+So we again change the Hexvalue using `hexedit` command and got the new hex value as:
 
 ```shell
 ┌──(rinshu㉿kali)-[~/Downloads]
@@ -623,20 +624,30 @@ So we again change the Hexvalue usin `hexedit` command and got the new hex value
 ```
 
 Now the image is open in image viewer but it seems it doesn't contain flag.
-![Final image]()
+
+![Final image](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeup_files/advanced-potion-making)
+
 May be we can check this image in different planes and get the flag.
 
 To do this we use `stegsolve` tool.
-![]()
-![]()
-![]()
-![]()
-![]()
+
+![Normal Image](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeup_files/Screenshot_2024-06-07_02_07_52.png)
+
+![Alpha Plane 0](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeup_files/Screenshot_2024-06-07_02_08_09.png)
+
+![Red Plane 4](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeup_files/Screenshot_2024-06-07_02_08_15.png)
+
+![Red plane 1](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeup_files/Screenshot_2024-06-07_02_08_25.png)
+
+![Red plane 0](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeup_files/Screenshot_2024-06-07_02_08_32.png)
+
+![Final flag](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeup_files/Screenshot_2024-06-07_02_08_40.png)
+
 After checking in multiple planes.
 
 Finally we get our flag in Red plane 0 as **`picoCTF{w1z4rdry}`**.
 
-
+---
 
 
 
