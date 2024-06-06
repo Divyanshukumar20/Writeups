@@ -542,6 +542,55 @@ In every `<tspan>` tag there is a alphabet, combining this all we get the flag.
 
 Thus our flag is **`picoCTF{3nh4nc3d_d0a757bf}`**
 
+---
+
+### advance-potion-making
+
+##### Challenge Description:
+Ron just found his own copy of advanced potion making, but its been corrupted by some kind of spell. Help him recover it!
+[advance-potion-making]()
+
+##### Writeup:
+After downlaoding we check the file type using `file` command.
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ file advanced-potion-making
+advanced-potion-making: data
+
+```
+We get nothing interesting here.
+
+Let's try `exiftool` to get the metadata of the file.
+
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ exiftool advanced-potion-making
+ExifTool Version Number         : 12.76
+File Name                       : advanced-potion-making
+Directory                       : .
+File Size                       : 30 kB
+File Modification Date/Time     : 2024:06:07 01:36:23+05:30
+File Access Date/Time           : 2024:06:07 01:36:24+05:30
+File Inode Change Date/Time     : 2024:06:07 01:36:24+05:30
+File Permissions                : -rw-rw-r--
+Error                           : Unknown file type
+                    
+```
+Here also we see nothing much as this is unknown file type.
+
+Let's check the hexdata of the file using `xxd` command to identify the file type.
+
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ xxd advanced-potion-making  
+00000000: 8950 4211 0d0a 1a0a 0012 1314 4948 4452  .PB.........IHDR
+00000010: 0000 0990 0000 04d8 0802 0000 0004 2de7  ..............-.
+00000020: 7800 0000 0173 5247 4200 aece 1ce9 0000  x....sRGB.......
+00000030: 0004 6741 4d41 0000 b18f 0bfc 6105 0000  ..gAMA......a...
+00000040: 0009 7048 5973 0000 1625 0000 1625 0149  ..pHYs...%...%.I
+
+```
+The signature is not known to any file but it is similar to png signature (89 50 4E 47).Also there is IHDR,sRGB,gAMA written in strings which gives us hint that it can be a png image file.
 
 
 
