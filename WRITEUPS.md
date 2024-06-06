@@ -548,7 +548,7 @@ Thus our flag is **`picoCTF{3nh4nc3d_d0a757bf}`**
 
 ##### Challenge Description:
 Ron just found his own copy of advanced potion making, but its been corrupted by some kind of spell. Help him recover it!
-[advance-potion-making]()
+[advance-potion-making](advance-potion-making)
 
 ##### Writeup:
 After downlaoding we check the file type using `file` command.
@@ -590,8 +590,51 @@ Let's check the hexdata of the file using `xxd` command to identify the file typ
 00000040: 0009 7048 5973 0000 1625 0000 1625 0149  ..pHYs...%...%.I
 
 ```
-The signature is not known to any file but it is similar to png signature (89 50 4E 47).Also there is IHDR,sRGB,gAMA written in strings which gives us hint that it can be a png image file.
+The signature (89 50 42 11) is not known to any type of file but it is similar to png signature (89 50 4E 47).Also there is IHDR,sRGB,gAMA written in strings which gives us hint that it can be a png image file.
 
+We change the hex values to png signature using `hexedit` command.
+The new hex values are:
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ xxd advanced-potion-making
+00000000: 8950 4e47 0d0a 1a0a 0012 1314 4948 4452  .PNG........IHDR
+00000010: 0000 0990 0000 04d8 0802 0000 0004 2de7  ..............-.
+00000020: 7800 0000 0173 5247 4200 aece 1ce9 0000  x....sRGB.......
+00000030: 0004 6741 4d41 0000 b18f 0bfc 6105 0000  ..gAMA......a...
+00000040: 0009 7048 5973 0000 1625 0000 1625 0149  ..pHYs...%...%.I
+```
+But still if we try to open the image using image viewer it shows us *Invalid IHDR length*.
+
+! [Invalid IHDR length image]()
+
+After some google we got to know that the Length of IHDR have this format (00 00 00 0D) and located in 13 bytes.
+
+So we again change the Hexvalue usin `hexedit` command and got the new hex value as:
+
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ xxd advanced-potion-making
+00000000: 8950 4e47 0d0a 1a0a 0000 000d 4948 4452  .PNG........IHDR
+00000010: 0000 0990 0000 04d8 0802 0000 0004 2de7  ..............-.
+00000020: 7800 0000 0173 5247 4200 aece 1ce9 0000  x....sRGB.......
+00000030: 0004 6741 4d41 0000 b18f 0bfc 6105 0000  ..gAMA......a...
+00000040: 0009 7048 5973 0000 1625 0000 1625 0149  ..pHYs...%...%.I
+
+```
+
+Now the image is open in image viewer but it seems it doesn't contain flag.
+![Final image]()
+May be we can check this image in different planes and get the flag.
+
+To do this we use `stegsolve` tool.
+![]()
+![]()
+![]()
+![]()
+![]()
+After checking in multiple planes.
+
+Finally we get our flag in Red plane 0 as **`picoCTF{w1z4rdry}`**.
 
 
 
