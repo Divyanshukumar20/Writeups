@@ -360,7 +360,7 @@ Thus, We get our flag as **`picoCTF{D1d_u_kn0w_ppts_r_z1p5}`**
 
 Download this image file and find the flag.
 
-[Download image file]()
+[Download image file](drawing.flag.svg)
 
 ##### Writeup:
 
