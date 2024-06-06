@@ -263,14 +263,14 @@ Now we check the hexvalue of the file and edit it where needed using `hexedit` c
 
 ```
 ![Old hex value]()
-Here the signature is correct `42 4D`. The offset mainly have 54 bytes value(36 00 00 00).But here it is not correct.So we change `BA D0` to `36 00`.
+Here the signature is correct `42 4D`. The offset mainly have 54 bytes value(36 00 00 00),but here it is not correct so we change `BA D0` to `36 00`.
 
 There are more errors in this.The header size must be of 40 bytes (28 00 00 00).
 
 After modifying the hex value we save this by pressing **F2** key.
 ![New hex value]()
 After this we check the image again in image viewer.
-Now the image is showing but we don't get the flag as this flag is fake.But the image seems like it is more.
+Now the image is showing but we don't get the flag as this flag is fake, but the image seems like it is more.
 ![Fake flag image]()
 
 We have to increase the height of image using `hexedit` again.
