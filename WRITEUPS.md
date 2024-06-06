@@ -251,7 +251,7 @@ We have to check the hexvalue of file and edit it with `hexedit` command.
 
 First we see the format of hex values i.e. signature,sixe of file,offset,etc. of BMP file on google.
 
-![Image]()
+![Image](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeup_files/Screenshot_2024-06-06_20-31-20.png)
 ![Image]()
 
 As this searching suggests that how much bytes particular function take.
