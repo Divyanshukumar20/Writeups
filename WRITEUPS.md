@@ -292,6 +292,14 @@ Here we got our flag as **`picoCTF{qu1t3_a_v13w_2020}`**
 
 ---
 
+### MacroHard WeakEdge
+
+##### Challenge Description:
+I've hidden a flag in this file. Can you find it? 
+
+[Forensics is fun.pptm]()
+
+
 
 
 
