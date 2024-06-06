@@ -299,10 +299,59 @@ I've hidden a flag in this file. Can you find it?
 
 [Forensics is fun.pptm](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeup_files/Forensics%20is%20fun.pptm)
 
+##### Writeup:
+As we can see this file have extension .pptm so first we check the type of file using `file` command.
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ file 'Forensics is fun.pptm'
+Forensics is fun.pptm: Microsoft PowerPoint 2007+
+```
+It is a powerpoint file so we open it using Microsoft Powerpoint to find the flag.
 
+But we finds nothing interesting in powerpoint.
+So we try to find the hiddden files inside the file.
 
+We try to unzip the file using `unzip` command to get the files hidden in it.
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ unzip 'Forensics is fun.pptm' 
+Archive:  Forensics is fun.pptm
+  inflating: [Content_Types].xml     
+  inflating: _rels/.rels             
+  inflating: ppt/presentation.xml    
+  inflating: ppt/slides/_rels/slide46.xml.rels  
+  inflating: ppt/slides/slide1.xml   
+  ....
+  inflating: ppt/vbaProject.bin      
+  inflating: ppt/presProps.xml       
+  inflating: ppt/viewProps.xml       
+  inflating: ppt/tableStyles.xml     
+  inflating: docProps/core.xml       
+  inflating: docProps/app.xml        
+  inflating: ppt/slideMasters/hidden 
+```
+After extracting we get so many files but all .xml and .rels files are not of our use because this are powerpoint files.
 
+Also if we see the last file which is unzip have name hidden.
+So there may be a chance of hidden flag inside it.
 
+If we try to catenate this file
+
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ cat ppt/slideMasters/hidden
+Z m x h Z z o g c G l j b 0 N U R n t E M W R f d V 9 r b j B 3 X 3 B w d H N f c l 9 6 M X A 1 f Q     
+```
+We get a text which maybe a encode flag text.
+
+First we remove the spaces between the alphabet and then we try to decode this text using `base64`.
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ echo ZmxhZzogcGljb0NURntEMWRfdV9rbjB3X3BwdHNfcl96MXA1fQ | base64 -d
+flag: picoCTF{D1d_u_kn0w_ppts_r_z1p5}base64: invalid input
+
+```
+Thus, We get our flag as **`picoCTF{D1d_u_kn0w_ppts_r_z1p5}`**
 
 
 
