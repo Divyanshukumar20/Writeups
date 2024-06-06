@@ -249,7 +249,7 @@ It means that there is something error in hex value of Bitmap header format.
 
 We have to check the hexvalue of file and edit it with `hexedit` command.
 
-First we see the format of hex values i.e. signature,sixe of file,offset,etc. of BMP file on google.
+First we see the format of hex values i.e. signature,size of file,offset,etc. of BMP file on google.
 
 ![Image](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeup_files/Screenshot_2024-06-06_20-31-20.png)
 ![Image](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeup_files/Screenshot_2024-06-06_20-32-16.png)
@@ -262,24 +262,32 @@ Now we check the hexvalue of the file and edit it where needed using `hexedit` c
 └─$ hexedit tunn3l_v1s10n1
 
 ```
-![Old hex value]()
+![Old hex value](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeup_files/Old%20hex%20value.png)
+
 Here the signature is correct `42 4D`. The offset mainly have 54 bytes value(36 00 00 00),but here it is not correct so we change `BA D0` to `36 00`.
 
 There are more errors in this.The header size must be of 40 bytes (28 00 00 00).
 
 After modifying the hex value we save this by pressing **F2** key.
-![New hex value]()
+
+![New hex value](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeup_files/New%20hex%20value.png)
+
 After this we check the image again in image viewer.
 Now the image is showing but we don't get the flag as this flag is fake, but the image seems like it is more.
-![Fake flag image]()
+
+![Fake flag image](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeup_files/tunn3l_v1s10np)
 
 We have to increase the height of image using `hexedit` again.
 
 We can easily identify where the height value is, using above reference.
 we change `32 01` to a increased size,let `32 04` and press F2.
-![Increased height hex value]()
-If we open our Image now it gives us the flag although the height of image is nor perfect but doesn't matter.
-![Final image of flag]()
+
+![Increased height hex value](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeup_files/Increased%20height%20hex%20value.png)
+
+If we open our Image now it gives us the flag although the height of image is not perfect but doesn't matter.
+
+![Final image of flag](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeup_files/tunn3l_v1s10n)
+
 Here we got our flag as **`picoCTF{qu1t3_a_v13w_2020}`**
 
 ---
