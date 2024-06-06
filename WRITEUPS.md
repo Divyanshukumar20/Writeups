@@ -73,7 +73,8 @@ And here we got our flag as **`picoCTF{the_m3tadata_1s_modified}`**
 ---
 
 ### Matryoshka doll
-##### Problem Desrciption:
+##### Challenge Desrciption:
+Matryoshka dolls are a set of wooden dolls of decreasing size placed one inside another. What's the final one? Image: this
 
 
 
