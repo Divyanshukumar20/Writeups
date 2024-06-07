@@ -1149,6 +1149,6 @@ So we change the extension from `.txt` to `.png`.
 
 If we try to open this file now, it opens as a image file and we get our flag.
 
-![flag image](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeup_files/flag.png)
+![flag image](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeup_files/flag1.png)
 
 The flag is **`picoCTF{now_you_know_about_extensions}`**
