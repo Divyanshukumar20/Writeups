@@ -992,7 +992,7 @@ Here we can see a png image name as `flag.png`
 
 If we open it using image viewer we can see our flag.
 
-![Main image of flag]()
+![Main image of flag](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeup_files/flag.png)
 
 The flag is **`picoCTF{Hiddinng_An_imag3_within_@n_ima9e_dc2ab58f}`**
 
