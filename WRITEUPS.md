@@ -654,7 +654,223 @@ Finally we get our flag in Red plane 0 as **`picoCTF{w1z4rdry}`**.
 ##### Challenge Description:
 This file was found among some files marked confidential but my pdf reader cannot read it, maybe yours can.
 
-You can download the file from [here]().
+You can download the file from [here](Flag.pdf).
+
+##### writeup:
+After downloading the file we see that it can't be open using any pdf viewer, maybe it is of different file type.
+
+First we check the type of file using `file` command.
+
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ file Flag.pdf 
+Flag.pdf: shell archive text
+
+```
+It is a shell archive text which means it a contains a executable script which we see using `cat` command.
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ cat Flag.pdf
+#!/bin/sh
+# This is a shell archive (produced by GNU sharutils 4.15.2).
+# To extract the files from this archive, save it to some FILE, remove
+# everything before the '#!/bin/sh' line above, then type 'sh FILE'.
+#
+lock_dir=_sh00046
+# Made on 2023-03-16 01:40
+.....
+then ${echo} "x - removed lock directory ${lock_dir}."
+else ${echo} "x - failed to remove lock directory ${lock_dir}."
+     exit 1
+fi
+exit 0
+
+```
+To run this program we change the extension of the file from **.pdf** to **.sh** and give it permission to run and then run the file.
+
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ mv Flag.pdf Flag.sh 
+       
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ chmod +x Flag.sh
+     
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ ./Flag.sh
+x - created lock directory _sh00046.
+x - extracting flag (text)
+x - removed lock directory _sh00046.
+
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ ls
+Flag.sh  download.jpeg  flag  google-chrome-stable_current_amd64.deb  stegsolve
+
+```
+It gives us another file name as flag.
+
+We check file type first using `file` command.
+
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ file flag    
+flag: current ar archive
+
+```
+Since this is ar archive so we extract file using `ar` command.
+
+And check again the file type of extracted file.
+
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ file flag    
+flag: current ar archive
+       
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ ar -x flag
+       
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ ls
+Flag.sh  download.jpeg  flag  google-chrome-stable_current_amd64.deb  stegsolve
+    
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ file flag
+flag: cpio archive
+
+```
+We can extract the file from this cpio archive using `binwalk` tool.
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ binwalk -e flag
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+32            0x20            bzip2 compressed data, block size = 900k
+
+      
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ ls
+Flag.sh  _flag.extracted  download.jpeg  flag  google-chrome-stable_current_amd64.deb  stegsolve
+                                                                                                       
+```
+We see a new directory created by binwalk.Let's explore it.
+
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ cd _flag.extracted  
+       
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ ls
+20
+       
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ file 20  
+20: gzip compressed data, was "flag", last modified: Thu Mar 16 01:40:19 2023, from Unix, original size modulo 2^32 328
+
+```
+Since the file in this directory is gzip compressed,we can decompress it using `gzip` command. But first we have to give it `.gz` extension.
+
+```shell
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ mv 20 20.gz         
+       
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ gzip -d 20.gz
+       
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ file 20
+20: lzip compressed data, version: 1
+
+```
+After decompressing the file we got another file named as 20.This is also a compressed file using lzip.
+
+So we do the same thing again, changing the extension of the file,decompress it with proper zip command.
+
+```shell
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ mv 20 20.lz  
+       
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ lzip -d 20.lz  
+       
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ ls           
+20
+       
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ file 20
+20: LZ4 compressed data (v1.4+)
+       
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ mv 20 20.lz4                
+       
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ lz4 -d 20.lz4
+Decoding file 20 
+20.lz4               : decoded 264 bytes                                       
+       
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ ls           
+20  20.lz4
+
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ file 20
+20: LZMA compressed data, non-streamed, size 253                                                                                                                      
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ mv 20 20.lzma                                                                                                                                                                                                
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ lzma -d 20.lzma
+       
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ ls             
+20  20.lz4
+       
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ file 20
+20: lzop compressed data - version 1.040, LZO1X-1, os: Unix
+       
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ mv 20 20.lzop
+       
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ lzop -d 20.lzop
+
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ ls 
+20  20.lz4  20.lzop
+       
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ file 20
+20: lzip compressed data, version: 1
+       
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ mv 20 20.lz  
+       
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ lzip -d 20.lz  
+       
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ ls           
+20  20.lz4  20.lzop
+       
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ file 20
+20: XZ compressed data, checksum CRC64
+       
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ mv 20 20.xz
+       
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ xz -d 20.xz 
+       
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ ls
+20  20.lz4  20.lzop
+       
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ file 20
+20: ASCII text
+
+```
 
 
 
