@@ -883,7 +883,7 @@ Catenate this file will give us a text.
 7069636f4354467b66316c656e406d335f6d406e3170756c407431306e5f
 6630725f3062326375723137795f39353063346665657d0a
 ```
-This is text is not a flag but it looks like a hexadecimal type of text.
+This text is not a flag but it looks like a hexadecimal type of text.
 
 We use `xxd -r -p` to get the flag.
 ```shell
