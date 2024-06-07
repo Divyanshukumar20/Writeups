@@ -895,3 +895,105 @@ picoCTF{f1len@m3_m@n1pul@t10n_f0r_0b2cur17y_950c4fee}
 Finally we get our flag as **`picoCTF{f1len@m3_m@n1pul@t10n_f0r_0b2cur17y_950c4fee}`**
 
 ---
+
+### hideme
+
+##### Challenge Description:
+Every file gets a flag.
+
+The SOC analyst saw one image been sent back and forth between two people. They decided to investigate and found out that there was more than what meets the eye [here]().
+
+##### Writeup:
+After downloading image if we open it using image viewer, it shows a simple image.
+
+Now we check the file type of image using `file` command.
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ file flag.png    
+flag.png: PNG image data, 512 x 504, 8-bit/color RGBA, non-interlaced
+
+```
+It shows the simple png file.
+
+Using `exiftool` we see the metadata of the image.
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ exiftool flag.png
+ExifTool Version Number         : 12.76
+File Name                       : flag.png
+Directory                       : .
+File Size                       : 43 kB
+File Modification Date/Time     : 2024:06:07 12:44:11+05:30
+File Access Date/Time           : 2024:06:07 12:44:31+05:30
+File Inode Change Date/Time     : 2024:06:07 12:44:31+05:30
+File Permissions                : -rw-rw-r--
+File Type                       : PNG
+File Type Extension             : png
+MIME Type                       : image/png
+Image Width                     : 512
+Image Height                    : 504
+Bit Depth                       : 8
+Color Type                      : RGB with Alpha
+Compression                     : Deflate/Inflate
+Filter                          : Adaptive
+Interlace                       : Noninterlaced
+Warning                         : [minor] Trailer data after PNG IEND chunk
+Image Size                      : 512x504
+Megapixels                      : 0.258
+
+```
+It also shows us nothing interesting.
+
+May be there is an embedded file in it.Wew check it using `binwalk` command.
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ binwalk flag.png   
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             PNG image, 512 x 504, 8-bit/color RGBA, non-interlaced
+41            0x29            Zlib compressed data, compressed
+39739         0x9B3B          Zip archive data, at least v1.0 to extract, name: secret/
+39804         0x9B7C          Zip archive data, at least v2.0 to extract, compressed size: 2959, uncompressed size: 3108, name: secret/flag.png
+42998         0xA7F6          End of Zip archive, footer length: 22
+
+```
+Our assumption is right There is a zip archive data name as secret and flag.png is compressed in it.
+
+We extract this file using `unzip` command or we can aslo use `binwalk -e` command to extarct the file or more data.
+
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ unzip flag.png
+Archive:  flag.png
+warning [flag.png]:  39739 extra bytes at beginning or within zipfile
+  (attempting to process anyway)
+   creating: secret/
+  inflating: secret/flag.png
+
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ ls
+download.jpeg  flag.png  google-chrome-stable_current_amd64.deb  secret  stegsolve                                                                            
+```
+After extracting we can see a new directory `secret`.
+
+Let's explore this directory.
+
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ cd secret
+                                                                           
+┌──(rinshu㉿kali)-[~/Downloads/secret]
+└─$ ls
+flag.png
+
+```
+Here we can see a png image name as `flag.png`
+
+If we open it using image viewer we can see our flag.
+
+![Main image of flag]()
+
+The flag is **`picoCTF{Hiddinng_An_imag3_within_@n_ima9e_dc2ab58f}`**
+
+---
