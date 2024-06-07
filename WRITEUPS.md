@@ -1043,7 +1043,7 @@ Megapixels                      : 1.6
 ```
 Now we try to extract and decode the Most significant bits of the image. To do this we need a tool.
 
-Searching on google we get the python tool for this specific purpose.
+Searching on google we get the python [tool](https://github.com/Pulho/sigBits) for this specific purpose.
 We download the python tool using the `wget` command on our shell.
 ```shell
 ┌──(rinshu㉿kali)-[~/Downloads]
