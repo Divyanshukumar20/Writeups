@@ -1139,7 +1139,7 @@ Hence, We get our flag as **`picoCTF{15_y0ur_que57_qu1x071c_0r_h3r01c_572ad5fe}`
 
 ##### Challenge Description
 
-This is a really weird text file ![TXT](flag.txt)? Can you find the flag?
+This is a really weird text file [TXT](flag.txt)? Can you find the flag?
 
 ##### Writeup
 
