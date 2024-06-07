@@ -997,3 +997,135 @@ If we open it using image viewer we can see our flag.
 The flag is **`picoCTF{Hiddinng_An_imag3_within_@n_ima9e_dc2ab58f}`**
 
 ---
+
+### MSB
+
+##### Challenge Description:
+This image passes LSB statistical analysis, but we can't help but think there must be something to the visual artifacts present in this image...
+
+Download the image [here]()
+
+##### Writeup:
+As challenge suggests that the image passes LSB statistical analysis but still finds nothing.
+
+So as name of challenge suggests MSB means the flag must be hidden within the MSB(Most signifucant bit) of the PNG image.
+
+If we check the file type and metadata , it looks normal.
+
+```shell
+──(rinshu㉿kali)-[~/Downloads]
+└─$ file Ninja-and-Prince-Genji-Ukiyoe-Utagawa-Kunisada.flag.png
+Ninja-and-Prince-Genji-Ukiyoe-Utagawa-Kunisada.flag.png: PNG image data, 1074 x 1500, 8-bit/color RGB, non-interlaced
+         
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ exiftool Ninja-and-Prince-Genji-Ukiyoe-Utagawa-Kunisada.flag.png
+ExifTool Version Number         : 12.76
+File Name                       : Ninja-and-Prince-Genji-Ukiyoe-Utagawa-Kunisada.flag.png
+Directory                       : .
+File Size                       : 3.4 MB
+File Modification Date/Time     : 2024:06:07 14:00:00+05:30
+File Access Date/Time           : 2024:06:07 14:00:00+05:30
+File Inode Change Date/Time     : 2024:06:07 14:00:00+05:30
+File Permissions                : -rw-rw-r--
+File Type                       : PNG
+File Type Extension             : png
+MIME Type                       : image/png
+Image Width                     : 1074
+Image Height                    : 1500
+Bit Depth                       : 8
+Color Type                      : RGB
+Compression                     : Deflate/Inflate
+Filter                          : Adaptive
+Interlace                       : Noninterlaced
+Image Size                      : 1074x1500
+Megapixels                      : 1.6
+
+```
+Now we try to extract and decode the Most significant bits of the image. To do this we need a tool.
+
+Searching on google we get the python tool for this specific purpose.
+We download the python tool using the `wget` command on our shell.
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ wget https://github.com/Pulho/sigBits/raw/master/sigBits.py
+--2024-06-07 15:15:41--  https://github.com/Pulho/sigBits/raw/master/sigBits.py
+Resolving github.com (github.com)... 20.207.73.82
+Connecting to github.com (github.com)|20.207.73.82|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://raw.githubusercontent.com/Pulho/sigBits/master/sigBits.py [following]
+--2024-06-07 15:15:42--  https://raw.githubusercontent.com/Pulho/sigBits/master/sigBits.py
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 2606:50c0:8000::154, 2606:50c0:8003::154, 2606:50c0:8002::154, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|2606:50c0:8000::154|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 7008 (6.8K) [text/plain]
+Saving to: ‘sigBits.py’
+
+sigBits.py                                                 100%[=======================================================================================================================================>]   6.84K  --.-KB/s    in 0s      
+
+2024-06-07 15:15:43 (26.4 MB/s) - ‘sigBits.py’ saved [7008/7008]
+
+```
+As we can there is a new file named `sigBits.py`.First we check the commands of this file that how we extract msb using this python code.
+
+As this is a python code so we give `python` command.
+
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ python sigBits.py                                                                   
+Usage:
+        sbPy [OPTIONS] [FILE]
+
+Options:
+        -t=<lsb or msb>, --type=<lsb or msb>:
+                Choose between read LSB or MSB (Default is LSB)
+
+        -o=<Order sigle>, --order=<Order sigle>:
+                Read the lsb or msb in the specify order (Default is RGB)
+
+        -out=<Ouput name>, --output=<Output name>
+                Choose the name of the output file (Default is outputSB)
+
+        -e=<Row r Column>, --extract=<Row or Column>
+                Choose between extracting by row or column (Default is Column)
+
+        -b=<7 bits of your choice>, --bits=<7 bits of your choice>
+                Choose the bits you want to extract info ( Have higher priority than '--type or -t' )
+                                                                                                        
+```
+
+So as this manual suggests that we are going to use `-t` parameter to get the extracted or decoded file.
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ python sigBits.py -t=Msb Ninja-and-Prince-Genji-Ukiyoe-Utagawa-Kunisada.flag.png    
+Done, check the output file!
+
+```
+It gives us the output file.
+
+Let's check this file.
+
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ ls
+Ninja-and-Prince-Genji-Ukiyoe-Utagawa-Kunisada.flag.png  download.jpeg  google-chrome-stable_current_amd64.deb  outputSB.txt  sigBits.py  stegsolve
+
+```
+This is a text file. Catenatee this file.
+
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ cat outputSB.txt
+The Project Gutenberg eBook of The History of Don Quixote, by Miguel de CervantesThis eBook is for the use of anyone anywhere in the United States andmost other parts of the world at no cost and with almost no restrictionswhatsoever. You may copy it, give it away or re-use it under the termsof the Project Gutenberg License included with this eBook or online atwww.gutenberg.org. If you are not located in the United States, youwill have to check the laws of the country where you are located beforeusing
+```
+It gives us a very large text. Now we have to find our flag in this text.
+
+Using `grep` command wouldn't work here as it again give the same output.
+
+So we use `less` command here.
+
+```shell
+┌──(rinshu㉿kali)-[~/Downloads]
+└─$ less outputSB.txt
+```
+Type 'pico' followed by / Press enter we get our flag.
+![Final flag image]()
