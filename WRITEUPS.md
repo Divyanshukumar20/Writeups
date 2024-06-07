@@ -901,7 +901,7 @@ Finally we get our flag as **`picoCTF{f1len@m3_m@n1pul@t10n_f0r_0b2cur17y_950c4f
 ##### Challenge Description:
 Every file gets a flag.
 
-The SOC analyst saw one image been sent back and forth between two people. They decided to investigate and found out that there was more than what meets the eye [here]().
+The SOC analyst saw one image been sent back and forth between two people. They decided to investigate and found out that there was more than what meets the eye [here](flag.png).
 
 ##### Writeup:
 After downloading image if we open it using image viewer, it shows a simple image.
