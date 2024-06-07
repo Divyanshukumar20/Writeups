@@ -649,6 +649,12 @@ Finally we get our flag in Red plane 0 as **`picoCTF{w1z4rdry}`**.
 
 ---
 
+### File types
+
+##### Challenge Description:
+This file was found among some files marked confidential but my pdf reader cannot read it, maybe yours can.
+
+You can download the file from [here]().
 
 
 
