@@ -1134,3 +1134,21 @@ Type 'pico' followed by / Press enter we get our flag.
 Hence, We get our flag as **`picoCTF{15_y0ur_que57_qu1x071c_0r_h3r01c_572ad5fe}`**
 
 ---
+
+### extensions
+
+##### Challenge Description
+
+This is a really weird text file ![TXT](flag.txt)? Can you find the flag?
+
+##### Writeup
+
+At first as we try to open this file we get some garbage text but its not completely garbage as we can see the first few letters as PNG,IHDR,sRGB,etc  which suggests that it is a png file.
+
+So we change the extension from `.txt` to `.png`.
+
+If we try to open this file now, it opens as a image file and we get our flag.
+
+![flag image](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeup_files/flag.png)
+
+The flag is **`picoCTF{now_you_know_about_extensions}`**
