@@ -871,6 +871,27 @@ Decoding file 20
 20: ASCII text
 
 ```
+After decompressing the file again and again using different commands.
 
+Finally we get a file which contains a ASCII text.
 
+Catenate this file will give us a text.
 
+```shell
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ cat 20            
+7069636f4354467b66316c656e406d335f6d406e3170756c407431306e5f
+6630725f3062326375723137795f39353063346665657d0a
+```
+This is text is not a flag but it looks like a hexadecimal type of text.
+
+We use `xxd -r -p` to get the flag.
+```shell
+┌──(rinshu㉿kali)-[~/Downloads/_flag.extracted]
+└─$ xxd -r -p 20
+picoCTF{f1len@m3_m@n1pul@t10n_f0r_0b2cur17y_950c4fee}
+
+```
+Finally we get our flag as **`picoCTF{f1len@m3_m@n1pul@t10n_f0r_0b2cur17y_950c4fee}`**
+
+---
