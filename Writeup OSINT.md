@@ -92,5 +92,41 @@ A quick search on a reputable search engine can help find matching usernames on 
 
 ##### WRITEUP:
 
+As question suggest we have to find the different social media handles of username *SakuraSnowAngelAiko*.
 
+We can use tools like `sherlock` to do the same but let's try easy one by searching the username just on google search.
+
+![Google search image](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Google%20_search.png)
+
+It shows two social media handles in top.First we open github account of this username.
+
+![github image](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/github_progile_pic.png)
+
+Here we find many repository.On exploring this we get nothing in directories except that PGP one.
+
+There is public key present in this.We open it and here we got the pgp public key.
+
+![Public key](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/public_key.png)
+
+Maybe this public key contains some information.So we try to decode this key.
+
+Search on google the pgp public key decoder and we click on the first option.
+
+![Decoder website](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Decoder%20website.png)
+
+Now we paste our key here and click decode.
+
+![Userid image](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Userid.png)
+
+After little bit scrolling we get the userid as *SakuraSnowAngel83@protonmail.com*.
+
+Now we check the twitter handle of this username,the 2nd search result of google.
+
+After exploring his/her twitter handle we get this 
+
+![Twitter handle](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/twitter_handle.png)
+
+It suggests that the full name must be *Aiko Abe*.
+
+Hence our final answer is **`SakuraSnowAngel83@protonmail.com`** and **`Aiko Abe`**
 
