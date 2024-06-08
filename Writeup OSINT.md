@@ -31,6 +31,10 @@ We've copied the image left by the attacker, you can view it in your browser [he
 
 Images can contain a treasure trove of information, both on the surface as well as embedded within the file itself. You might find information such as when a photo was created, what software was used, author and copyright information, as well as other metadata significant to an investigation. In order to answer the following question, you will need to thoroughly analyze the image found by the OSINT Dojo administrators in order to obtain basic information on the attacker.
 
+##### QUESTION:
+
+What username does the attacker go by?
+
 ##### Writeup:
 
 After downloading the image, we see its metadata using `exiftool` in shell.
@@ -90,6 +94,11 @@ Most digital platforms have some sort of username field. Many people become atta
  
 A quick search on a reputable search engine can help find matching usernames on other platforms, and there are also a large number of specialty tools that exist for that very same purpose. Keep in mind, that sometimes a platform will not show up in either the search engine results or in the specialized username searches due to false negatives. In some cases you need to manually check the site yourself to be 100% positive if the account exists or not. In order to answer the following questions, use the attacker's username found in Task 2 to expand the OSINT investigation onto other platforms in order to gather additional identifying information on the attacker. Be wary of any false positives!
 
+##### QUESTIONS:
+
+1. What is the full email address used by the attacker?
+2. What is the attacker's full real name?
+
 ##### WRITEUP:
 
 As question suggest we have to find the different social media handles of username *SakuraSnowAngelAiko*.
@@ -131,6 +140,44 @@ It suggests that the full name must be *Aiko Abe*.
 Hence our final answer is **`SakuraSnowAngel83@protonmail.com`** and **`Aiko Abe`**
 
 ---
+
+### Task 4:UNVEIL
+
+##### Background:
+
+It seems the cybercriminal is aware that we are on to them. As we were investigating into their Github account we observed indicators that the account owner had already begun editing and deleting information in order to throw us off their trail. It is likely that they were removing this information because it contained some sort of data that would add to our investigation. Perhaps there is a way to retrieve the original information that they provided? 
+
+##### INSTRUCTION:
+
+On some platforms, the edited or removed content may be unrecoverable unless the page was cached or archived on another platform. However, other platforms may possess built-in functionality to view the history of edits, deletions, or insertions. When available this audit history allows investigators to locate information that was once included, possibly by mistake or oversight, and then removed by the user. Such content is often quite valuable in the course of an investigation. In order to answer the below questions, you will need to perform a deeper dive into the attacker's Github account for any additional information that may have been altered or removed. You will then utilize this information to trace some of the attacker's cryptocurrency transactions.
+
+##### QUESTIONS:
+
+1. What cryptocurrency does the attacker own a cryptocurrency wallet for?
+2. What is the attacker's cryptocurrency wallet address?
+3. What mining pool did the attacker receive payments from on January 23, 2021 UTC?
+4. What other cryptocurrency did the attacker exchange with using their cryptocurrency wallet?
+
+##### WRITEUP:
+
+As suggested in the instruction we have to find any information regarding cryptocurrency in github account of this username.
+
+![github account]()
+
+If we see the repository of this acoount we found that there is ETH named repository also.Let's check that
+
+![ETH repository]()
+
+In the file miningscript we found some relevant keywords like walletid,miningpool.Let's check the history of this file.
+
+! [Wallet address]()
+
+And here we got the wallet address as *0xa102397dbeeBeFD8cD2F73A89122fCdB53abB6ef*
+
+Now using this address we track the transaction of cryptocurrency.
+
+On searching google cryptocurrency transaction tracker
+
 
 
 
