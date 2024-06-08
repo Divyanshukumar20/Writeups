@@ -170,6 +170,10 @@ If we see the repository of this acoount we found that there is ETH named reposi
 
 In the file miningscript we found some relevant keywords like walletid,miningpool.Let's check the history of this file.
 
+![History of eth]()
+
+It shows two files We must see update miningscript commit to see the change.
+
 ![Wallet address]()
 
 And here we got the wallet address as *0xa102397dbeeBeFD8cD2F73A89122fCdB53abB6ef*
@@ -181,6 +185,9 @@ On searching google cryptocurrency transaction tracker we found some good result
 ![Transaction tracker]()
 
 Let's click the first one and paste the wallet address in search box of this website.
+
+![Search address]()
+
 We can see one result whcih shows that the cryptocurrency used here is *Ethereum*
 
 ![Etherum]()
@@ -194,8 +201,11 @@ If we explore more to find other cryptocurrency we see that there is token secti
 ![Other cryptocurrency]()
 
 * Answer 1 : **Ethereum**
+  
 * Answer 2 : **0xa102397dbeeBeFD8cD2F73A89122fCdB53abB6ef**
+
 * Answer 3 : **Ethermine**
+
 * Answer 4 : **Tether**
 
 ---
