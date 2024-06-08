@@ -170,13 +170,39 @@ If we see the repository of this acoount we found that there is ETH named reposi
 
 In the file miningscript we found some relevant keywords like walletid,miningpool.Let's check the history of this file.
 
-! [Wallet address]()
+![Wallet address]()
 
 And here we got the wallet address as *0xa102397dbeeBeFD8cD2F73A89122fCdB53abB6ef*
 
 Now using this address we track the transaction of cryptocurrency.
 
-On searching google cryptocurrency transaction tracker
+On searching google cryptocurrency transaction tracker we found some good results.
+
+![Transaction tracker]()
+
+Let's click the first one and paste the wallet address in search box of this website.
+We can see one result whcih shows that the cryptocurrency used here is *Ethereum*
+
+![Etherum]()
+
+Now if we scroll little bit to get the details of the transaction.We see the On 23 January 2021 UTC (Screenshot shown time in IST) there was transaction made form *Ethermine* mining pool.
+
+![Ethermine]()
+
+If we explore more to find other cryptocurrency we see that there is token section which gives the details of the other cryptocurrrency exchange which is *Tether*
+
+![Other cryptocurrency]()
+
+* Answer 1 : **Ethereum**
+* Answer 2 : **0xa102397dbeeBeFD8cD2F73A89122fCdB53abB6ef**
+* Answer 3 : **Ethermine**
+* Answer 4 : **Tether**
+
+---
+  
+
+
+
 
 
 
