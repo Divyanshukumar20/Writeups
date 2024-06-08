@@ -216,7 +216,7 @@ If we explore more to find other cryptocurrency we see that there is token secti
 
 Just as we thought, the cybercriminal is fully aware that we are gathering information about them after their attack. They were even so brazen as to message the OSINT Dojo on Twitter and taunt us for our efforts. The Twitter account which they used appears to use a different username than what we were previously tracking, maybe there is some additional information we can locate to get an idea of where they are heading to next?
 
-We've taken a screenshot of the message sent to us by the attacker, you can view it in your browser [here]().
+We've taken a screenshot of the message sent to us by the attacker, you can view it in your browser [here](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/challenge_files/taunt.png).
 
 ##### Instructions:
 
@@ -231,21 +231,21 @@ Although many users share their username across different platforms, it isn't un
 ##### Writeup:
  After downloading the image we can se the message is from the same twitter account which we found during task 2.
 
- ![Twitter account]()
+ ![Twitter account](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Twitter%20Handle.png)
 
 Hence the attacker's current handle is *SakuraLoverAiko*.
 
 Now if we research this account little bit we found there is a screenshot related to wifi. His one tweet shows that he must hide something on dark web.If we clearly see this tweet some text are uppercase which gives us some hint.
 
-![That tweet]()
+![That tweet](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Tweet.png)
 
 Let's search this uppercase letter DEEP PASTE on google and research on it.
 
-![Google search Deep paste]()
+![Google search Deep paste](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Deep%20Paste%20google%20search.png)
 
 After little bit research I found that Deep paste is a onion website of dark web in which we store data privately.It means this image must be of Deeppaste website.
 
-![Deeppaste tweet image]()
+![Deeppaste tweet image](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/FfFDMydaUAAVJPf.png)
 
 We cant't open onion website with normal browser. To open this website I need tor browser. So first I download the tor browser and then search on it. I observe that simply search Deeppaste won't get the the actual website.
 
@@ -253,18 +253,18 @@ So after lot of research on finding the links to open Deeppaste website I finall
 
 Next I visit the link and now we are on a Deeppaste website.
 
-![Deeppaste website]()
+![Deeppaste website](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Deep%20Paste%20website.png)
 
 Click on search pastes.On the twitter post of the screenshot that is related to Wi-fi have some information regarding how to search it shows a large text which maybe a MD5 hash as their is option to search using MD5 in website.
-![MD5 written]()
+![MD5 written](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/MD5%20written.png)
 
 If we search using this MD5 value we get the Wi-Fi details written.So the answer for the second question is the link which we are currently in.
 
-![Wi-FI details]()
+![Wi-FI details](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Wi-Fi%20Details.png)
 
 Next,We have to find the BSSID of the his home's Wi-Fi as we already have SSID of the same.So we just google BSSID finder.
 
-![Google BSSID Finder]()
+![Google BSSID Finder](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/BASSID%20finder%20google%20search.png)
 
 Let's click on the first result.Now we are into wigle website.First I make account on this website.
 
