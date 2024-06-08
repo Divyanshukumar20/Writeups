@@ -209,6 +209,79 @@ If we explore more to find other cryptocurrency we see that there is token secti
 * Answer 4 : **Tether**
 
 ---
+
+### Task 5:TAUNT
+
+##### Background:
+
+Just as we thought, the cybercriminal is fully aware that we are gathering information about them after their attack. They were even so brazen as to message the OSINT Dojo on Twitter and taunt us for our efforts. The Twitter account which they used appears to use a different username than what we were previously tracking, maybe there is some additional information we can locate to get an idea of where they are heading to next?
+
+We've taken a screenshot of the message sent to us by the attacker, you can view it in your browser [here]().
+
+##### Instructions:
+
+Although many users share their username across different platforms, it isn't uncommon for users to also have alternative accounts that they keep entirely separate, such as for investigations, trolling, or just as a way to separate their personal and public lives. These alternative accounts might contain information not seen in their other accounts, and should also be investigated thoroughly. In order to answer the following questions, you will need to view the screenshot of the message sent by the attacker to the OSINT Dojo on Twitter and use it to locate additional information on the attacker's Twitter account. You will then need to follow the leads from the Twitter account to the Dark Web and other platforms in order to discover additional information.
+
+##### Questions:
+
+1. What is the attacker's current Twitter handle?
+2. What is the URL for the location where the attacker saved their WiFi  SSIDs and passwords?
+3. What is the BSSID for the attacker's Home WiFi?
+
+##### Writeup:
+ After downloading the image we can se the message is from the same twitter account which we found during task 2.
+
+ ![Twitter account]()
+
+Hence the attacker's current handle is *SakuraLoverAiko*.
+
+Now if we research this account little bit we found there is a screenshot related to wifi. His one tweet shows that he must hide something on dark web.If we clearly see this tweet some text are uppercase which gives us some hint.
+
+![That tweet]()
+
+Let's search this uppercase letter DEEP PASTE on google and research on it.
+
+![Google search Deep paste]()
+
+After little bit research I found that Deep paste is a onion website of dark web in which we store data privately.It means this image must be of Deeppaste website.
+
+![Deeppaste tweet image]()
+
+We cant't open onion website with normal browser. To open this website I need tor browser. So first I download the tor browser and then search on it. I observe that simply search Deeppaste won't get the the actual website.
+
+So after lot of research on finding the links to open Deeppaste website I finally get the link on reddit.
+
+Next I visit the link and now we are on a Deeppaste website.
+
+![Deeppaste website]()
+
+Click on search pastes.On the twitter post of the screenshot that is related to Wi-fi have some information regarding how to search it shows a large text which maybe a MD5 hash as their is option to search using MD5 in website.
+![MD5 written]()
+
+If we search using this MD5 value we get the Wi-Fi details written.So the answer for the second question is the link which we are currently in.
+
+![Wi-FI details]()
+
+Next,We have to find the BSSID of the his home's Wi-Fi as we already have SSID of the same.So we just google BSSID finder.
+
+![Google BSSID Finder]()
+
+Let's click on the first result.Now we are into wigle website.First I make account on this website.
+
+![Wigle weebsite]()
+
+After that finding the BSSID using advance search option and write the SSID here and enter. After little bit scrolling we see there is one result we get and the BSSID is written here as *84:af:ec:34:fc:f8*.
+
+![Searching using SSID]()
+
+![BSSID]()
+
+* Answer 1: SakuraLoverAiko
+
+* Answer 2: http://deepv2w7p33xa4pwxzwi2ps4j62gfxpyp44ezjbmpttxz3owlsp4ljid.onion
+
+* Answer 3: 84:af:ec:34:fc:f8
+
   
 
 
