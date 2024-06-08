@@ -162,19 +162,19 @@ On some platforms, the edited or removed content may be unrecoverable unless the
 
 As suggested in the instruction we have to find any information regarding cryptocurrency in github account of this username.
 
-![github account]()
+![github account](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Github%20handle.png)
 
 If we see the repository of this acoount we found that there is ETH named repository also.Let's check that
 
-![ETH repository]()
+![ETH repository](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/ETH%20repository.png)
 
 In the file miningscript we found some relevant keywords like walletid,miningpool.Let's check the history of this file.
 
-![History of eth]()
+![History of eth](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/History%20of%20eth.png)
 
 It shows two files We must see update miningscript commit to see the change.
 
-![Wallet address]()
+![Wallet address](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Wallet%20address.png)
 
 And here we got the wallet address as *0xa102397dbeeBeFD8cD2F73A89122fCdB53abB6ef*
 
@@ -182,23 +182,23 @@ Now using this address we track the transaction of cryptocurrency.
 
 On searching google cryptocurrency transaction tracker we found some good results.
 
-![Transaction tracker]()
+![Transaction tracker](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Transaction%20tracker%20google%20search.png)
 
 Let's click the first one and paste the wallet address in search box of this website.
 
-![Search address]()
+![Search address](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/search%20wallet%20address.png)
 
 We can see one result whcih shows that the cryptocurrency used here is *Ethereum*
 
-![Etherum]()
+![Etherum](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Etherum%20bitcoin.png)
 
 Now if we scroll little bit to get the details of the transaction.We see the On 23 January 2021 UTC (Screenshot shown time in IST) there was transaction made form *Ethermine* mining pool.
 
-![Ethermine]()
+![Ethermine](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Ethermine.png)
 
 If we explore more to find other cryptocurrency we see that there is token section which gives the details of the other cryptocurrrency exchange which is *Tether*
 
-![Other cryptocurrency]()
+![Other cryptocurrency](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Other%20cryptocurrency.png)
 
 * Answer 1 : **Ethereum**
   
