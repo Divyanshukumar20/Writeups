@@ -188,11 +188,11 @@ Let's click the first one and paste the wallet address in search box of this web
 
 ![Search address](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/search%20wallet%20address.png)
 
-We can see one result whcih shows that the cryptocurrency used here is *Ethereum*
+We can see one result which shows that the cryptocurrency used here is *Ethereum*
 
 ![Etherum](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Etherum%20bitcoin.png)
 
-Now if we scroll little bit to get the details of the transaction.We see the On 23 January 2021 UTC (Screenshot shown time in IST) there was transaction made form *Ethermine* mining pool.
+Now if we scroll little bit to get the details of the transaction.We see the On 23 January 2021 UTC (Screenshot shown time in IST) there was transaction made from *Ethermine* mining pool.
 
 ![Ethermine](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Ethermine.png)
 
