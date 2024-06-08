@@ -305,50 +305,50 @@ In OSINT, there is oftentimes no "smoking gun" that points to a clear and defini
 
 In first question the photo mentioned is this.
 
-![cherry]()
+![cherry](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/cherry.png)
 
 To find which place in this photo we use google lens first scan this image from every possible aspect.
 
-![GL_cherry1]()
-![GL_cherry2]()
-![GL_cherry3]()
-![GL_cherry4]()
+![GL_cherry1](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/GL%20cherry1.png)
+![GL_cherry2](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Gl%20cherry2.png)
+![GL_cherry3](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Gl%20cherry3.png)
+![GL_cherry4](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/GL%20cherry4.png)
 
 Here we can see the this washington monument is most matched result to this image.We can say that this is a place near washington monument.So we just search nearest airport to washington monument in google.
 
-![nearest airport search]()
+![nearest airport search](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/nearest%20%20airport%20search.png)
 
 This is the airport we use symbol of airport for answer i.e *DCA*
 
 Going to second question this is the required photo 
 
-![Lounge photo]()
+![Lounge photo](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Lounge.png)
 
 As done previously we scan this image using google lens and we get the similar image.
 
-![GL_Lounge]()
+![GL_Lounge](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/GL%20lounge.png)
 
 If we click on the link we redirected to the website we found that it is a pic of haneda airport that have code *HND*.So this is our answer for the second question.
 
-![HND link]()
+![HND link](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/HND%20link.png)
 
 Now headed to the third question the image here is a map or picture clicked by sky.
 
-![japan map]()
+![japan map](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/japan_map.png)
 
 Again try to use google lens.And here we found some similar image.
 
-![GL_japan map]()
+![GL_japan map](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/GL_map.png)
 
 If we click on the link we redirected to the website which shows us a map
 
-![Website map1]()
+![Website map1](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Websitemap1.png)
 
-![Website map2]()
+![Website map2](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Website%20map2.png)
 
 Zoom this map to get the name of the lake.
 
-![Lake name]()
+![Lake name](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Lake%20name.png)
 
 The lake name is *Lake Inawashiro*
 
