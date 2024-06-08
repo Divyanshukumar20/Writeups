@@ -282,7 +282,82 @@ After that finding the BSSID using advance search option and write the SSID here
 
 * Answer 3: 84:af:ec:34:fc:f8
 
-  
+---
+
+### Task 6: HOMEBOUND
+
+##### Background:
+
+Based on their tweets, it appears our cybercriminal is indeed heading home as they claimed. Their Twitter account seems to have plenty of photos which should allow us to piece together their route back home. If we follow the trail of breadcrumbs they left behind, we should be able to track their movements from one location to the next back all the way to their final destination. Once we can identify their final stops, we can identify which law enforcement organization we should forward our findings to.
+
+##### Instruction:
+
+In OSINT, there is oftentimes no "smoking gun" that points to a clear and definitive answer. Instead, an OSINT analyst must learn to synthesize multiple pieces of intelligence in order to make a conclusion of what is likely, unlikely, or possible. By leveraging all available data, an analyst can make more informed decisions and perhaps even minimize the size of data gaps. In order to answer the following questions, use the information collected from the attacker's Twitter account, as well as information obtained from previous parts of the investigation to track the attacker back to the place they call home.
+
+##### Questions:
+
+1. What airport is closest to the location the attacker shared a photo from prior to getting on their flight?
+2. What airport did the attacker have their last layover in?
+3. What lake can be seen in the map shared by the attacker as they were on their final flight home?
+4. What city does the attacker likely consider "home"?
+
+##### Writeup:
+
+In first question the photo mentioned is this.
+
+![cherry]()
+
+To find which place in this photo we use google lens first scan this image from every possible aspect.
+
+![GL_cherry1]()
+![GL_cherry2]()
+![GL_cherry3]()
+![GL_cherry4]()
+
+Here we can see the this washington monument is most matched result to this image.We can say that this is a place near washington monument.So we just search nearest airport to washington monument in google.
+
+![nearest airport search]()
+
+This is the airport we use symbol of airport for answer i.e *DCA*
+
+Going to second question this is the required photo 
+
+![Lounge photo]()
+
+As done previously we scan this image using google lens and we get the similar image.
+
+![GL_Lounge]()
+
+If we click on the link we redirected to the website we found that it is a pic of haneda airport that have code *HND*.So this is our answer for the second question.
+
+![HND link]()
+
+Now headed to the third question the image here is a map or picture clicked by sky.
+
+![japan map]()
+
+Again try to use google lens.And here we found some similar image.
+
+![GL_japan map]()
+
+If we click on the link we redirected to the website which shows us a map
+
+![Website map]()
+
+Zoom this map to get the name of the lake.
+
+![Lake name]()
+
+The lake name is *Lake Inawashiro*
+
+Going to the fourth question we already know the name of city where his home is, as in task 4 while collecting information about wifi in deeppaste link we can see the name of his city.
+
+![]()
+
+The City name is *Hirosaki*
+
+
+
 
 
 
