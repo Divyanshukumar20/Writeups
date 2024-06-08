@@ -342,7 +342,9 @@ Again try to use google lens.And here we found some similar image.
 
 If we click on the link we redirected to the website which shows us a map
 
-![Website map]()
+![Website map1]()
+
+![Website map2]()
 
 Zoom this map to get the name of the lake.
 
@@ -352,7 +354,7 @@ The lake name is *Lake Inawashiro*
 
 Going to the fourth question we already know the name of city where his home is, as in task 4 while collecting information about wifi in deeppaste link we can see the name of his city.
 
-![]()
+![wifi details](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Wi-Fi%20Details.png)
 
 The City name is *Hirosaki*
 
