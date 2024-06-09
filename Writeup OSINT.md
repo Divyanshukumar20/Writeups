@@ -569,8 +569,9 @@ Calculate approximately how far did the person travel overall.
 This Task is quite lengthy.There are four pictures it seems that we have to identify the locations of this pictures and connect it to get the path travelled by the person.
 Here the pictures and video ordered by their name maybe this is ordered as person travels.
 
-
 So let's start with the first picture.
+
+![]()
 
 As always we first search this image using google lens.
 
@@ -620,7 +621,7 @@ Watched video atleast 10 times.I found that there is one place which we found ea
 
 The only thing which i can do is to search whole route on map to find this location.
 
-After searching for almost 30 min finally I found this locate on map.
+After searching for almost 30 min finally I found this location on map.
 And this is the starting position of the video if we clearly see the house and its surrounding in map and video.
 
 Now calculating distance between two points and the video is of 8 seconds till this location.
