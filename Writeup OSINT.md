@@ -431,7 +431,49 @@ It is almost same as image the compass shows we are facing northwest direction.S
 
 ##### Task Review:
 
+In April 2017 Mohamed Abdullahi Farmaajo, the then president of Somalia, visited Turkey. A news agency published a photo where he was seen shaking hands with Recep Tayyip Erdoğan, the country’s president. The article did not disclose where the photo was taken. Your task is to find out the name and coordinates of the location seen below.
+
+Click here to see the photo on its own.
+
 ##### Writeup:
+
+As usual first we google search this image
+
+![pic 1]()
+
+After vising websites, We found that this is a image of president complex of Turkey.
+![Pic 2]()
+
+Now searching this on google map we got this.This is the satellite view of that presidential complex.
+
+![pic 3]()
+
+Given picture is must be the entrance of the building but here two ways and we don't know hich one is for what purpose. We have to find exact coordinates where handshake takes place.
+
+![pic 4]()
+
+TO get more idea about the structure of required place we pick the more informative pic of same place using google lens.
+
+![pic  5]()
+
+Now we get the idea of the strucutre of entrance point but in google map we cant's see the street view of this place so we just search on youtube the presidential complex turkey and we got a video by euronews in which we can clearly see the building from every angle.
+
+
+Now If we see on this timestamps there is lot more space infront of entrance.
+
+![pic 6]()
+
+![pic 7]()
+
+And here is the some diamond shape design which is also on map.
+
+![pic 8]()
+
+After observing all this we conclude that the pic is of here.
+
+![pic 9]()
+
+So the answer is President Complex Turkey,Coordinates (39.931175, 32.799750)
 
 ---
 ### Exercise 14
