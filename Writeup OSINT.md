@@ -552,7 +552,70 @@ So the coordinates of this place is **47.017594,28.852750**
 
 ##### Task Review:
 
+The image below shows the contents of a zip file. Inside you will find a 31-second video recorded during a train ride, and four photos of undisclosed locations. They were all taken by the same individual in February 2024. Despite having no useful metadata, they still contain enough information to track down this person’s movements.
+Your task is to determine:
+
+a) At which train stations did the person board and alight?
+
+Bonus challenges:
+
+Identify the mode of transportation in each image.
+Determine the type of train they rode.
+Estimate the speed at which the train was travelling when the footage was recorded.
+Calculate approximately how far did the person travel overall.
+
 ##### Writeup:
+
+This Task is quite lengthy.There are four pictures it seems that we have to identify the locations of this pictures and connect it to get the path travelled by the person.
+
+Here the pictures and video ordered by their name maybe this is ordered as person travels.
+
+
+So let's start with the first picture.
+
+As always we first search this image using google lens.
+
+The result shows the location of this image.
+
+Here we succesfully locate this image and If we connect things in map and in image we get to know the exact place from where the picture is clicked.
+
+So,This is Chorsu Bazaar located in Tashkent city of Uzbekistan.
+
+Now headed to the next picture.
+
+As previously done we again search this image in google lens.
+
+This shows us the result that this picture is of Navruz Park located in the same city Tashkent.
+
+Using this information we successfully locate this image in map.Also we can connect things like Halva Art cafe shop and giant wheel to get the exact location.
+
+Now comes to the third image.
+
+After trying multiple times on google lens we can't find anything great.Now what we have to do is observing small things in the picture like the kapital bank,Samsung galaxy holding,navien building.
+
+Searched things on google like samsung galaxy holding in Tashkent city or more but get nothing much.
+So start observing more in this image and found that there is Rent a car holding here.
+
+On searching this on google map get lot of renting car buildings.Start searching each one in Tashkent on map.
+Finally found a Orient rent a car as correct.
+If we see the street view near this we are absolutely right as this picture is exactly taken from here.
+Hence this image is Oybek,Tashkent.
+
+Now going to 4th image.
+
+After a lot of searching on google lens,reversing image by yandex,Tineye,it seems that the pattern on the flyover here is mostly found in samarkand city in uzbekistan.Now let's try to find this image in samarkand.
+Observing the little things in image like the pattern,flyover,their is mountain like terrain in background maybe we found this place using this terrain.
+
+Search samarkand on google map and after zooming little bit we can see there is large and small terrains. IF we check the small terrain we see a intersecton of road.And we got it if we check the street view we can see the exact location from where the image is captured.
+Our assumption is right this image is from samarkand.
+
+Till now our findings conclude many things.
+The person visit three place in same city(Tashkent) and pick a train from the station nearby to Oybex and travel to another city samarkand.
+
+If we find the station nearby Oybek, we found that Stantsiya Tashkent Pass Tsentr is the nearest station.
+
+
+
 
 ---
 
