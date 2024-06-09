@@ -373,7 +373,7 @@ On January 19, 2023, a journalist with almost 140k followers on Twitter shared a
 The photo is not of the event described by the journalist.
 a) Verify the statement above.
 
-Click [here]() to open the photo on a new tab.
+Click [here](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/challenge_files/osintexercise006.webp) to open the photo on a new tab.
 
 ##### Writeup:
 
@@ -396,9 +396,29 @@ a) What is the name of the resort?
 b) What are the coordinates of the island?
 c) In which cardinal direction was the camera facing when the photo was taken?
 
-Click here to open the photo on a new tab.
+Click [here]() to open the photo on a new tab.
 
 ##### Writeup:
+
+As done previously again we are going to search this image on google lens.
+And if we see the exact matches we can clearly see the facebook page which display the resort name i.e Oan Resort.
+![GL_resort]()
+
+Check its coordinates on google and we got it.
+
+![Coordinates]()
+
+Now if we try in google map satellite to adjust the island map as same as image we get this.
+
+![Google map island]()
+
+It is almost same as image the compass shows we are facing northwest direction.So camera also must be facing in northwest direction.
+
+*Answer 1:Oan Resort
+
+*Answer 2:7.3626° N, 151.7563° E
+
+*Answer 3:Northwest
 
 ---
 
