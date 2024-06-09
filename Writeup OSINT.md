@@ -567,7 +567,6 @@ Calculate approximately how far did the person travel overall.
 ##### Writeup:
 
 This Task is quite lengthy.There are four pictures it seems that we have to identify the locations of this pictures and connect it to get the path travelled by the person.
-
 Here the pictures and video ordered by their name maybe this is ordered as person travels.
 
 
@@ -612,10 +611,31 @@ Our assumption is right this image is from samarkand.
 Till now our findings conclude many things.
 The person visit three place in same city(Tashkent) and pick a train from the station nearby to Oybex and travel to another city samarkand.
 
-If we find the station nearby Oybek, we found that Stantsiya Tashkent Pass Tsentr is the nearest station.
+If we find the station nearby Oybek, we found that Stantsiya Tashkent Pass Tsentr is the nearest station.The person must board the train from here and alight to Samarkand railway station.
+This is the answer to our first question.
 
+On searching train between two cities.I found that there is a bullet train who travel between two.
 
+Watched video atleast 10 times.I found that there is one place which we found easily in the train route between this two station is the road crossing.
 
+The only thing which i can do is to search whole route on map to find this location.
+
+After searching for almost 30 min finally I found this locate on map.
+And this is the starting position of the video if we clearly see the house and its surrounding in map and video.
+
+Now calculating distance between two points and the video is of 8 seconds till this location.
+We can calculate speed of the train.As the map shows it is 304 m approx and covered in 8 second.
+So the speed of the train is 304/8 = 38m/s.
+
+The mode of transport in 1st image must be by foot as seen in the map no vehicle there.
+In 2nd pic also the person is by foot as there is no vehicle.
+In 3rd pic the person must be using the car because he/she is in the middle of the road and trravelling far distances.
+In 4th pic we can clearly see in reflection that the person is in the car.
+
+For calculating the distance travelled by person we first calculate the distance travelled by him/her in tashkent i.e 10.2 km approx as seen in google map.
+Now the train travel approx 300 km as seen in map.
+
+So total distance travel is aprrox 311 km.
 
 ---
 
