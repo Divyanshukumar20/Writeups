@@ -1,4 +1,4 @@
-# CSOC Week 1 OSINT
+   # CSOC Week 1 OSINT
 
 ### Challenge 2
 
@@ -360,7 +360,7 @@ The City name is *Hirosaki*.
 
 ---
 
-###Grahlix Exercises
+### Grahlix Exercises
 
 ---
 
