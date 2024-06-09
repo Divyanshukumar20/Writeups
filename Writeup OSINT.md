@@ -571,72 +571,147 @@ Here the pictures and video ordered by their name maybe this is ordered as perso
 
 So let's start with the first picture.
 
-![]()
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/1.jpg)
 
 As always we first search this image using google lens.
+
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/2.png)
 
 The result shows the location of this image.
 
 Here we succesfully locate this image and If we connect things in map and in image we get to know the exact place from where the picture is clicked.
 
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/3%20ne.png)
+
 So,This is Chorsu Bazaar located in Tashkent city of Uzbekistan.
 
 Now headed to the next picture.
 
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/4.jpg)
+
 As previously done we again search this image in google lens.
+
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/5.png)
 
 This shows us the result that this picture is of Navruz Park located in the same city Tashkent.
 
 Using this information we successfully locate this image in map.Also we can connect things like Halva Art cafe shop and giant wheel to get the exact location.
 
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/6.png)
+
 Now comes to the third image.
 
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/7%20ne.jpg)
+
 After trying multiple times on google lens we can't find anything great.Now what we have to do is observing small things in the picture like the kapital bank,Samsung galaxy holding,navien building.
+
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/8.png)
+
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/9.png)
+
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/10.png)
 
 Searched things on google like samsung galaxy holding in Tashkent city or more but get nothing much.
 So start observing more in this image and found that there is Rent a car holding here.
 
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/10%20ne.png)
+
 On searching this on google map get lot of renting car buildings.Start searching each one in Tashkent on map.
 Finally found a Orient rent a car as correct.
+
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/11.png)
+
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/12.png)
+
 If we see the street view near this we are absolutely right as this picture is exactly taken from here.
 Hence this image is Oybek,Tashkent.
 
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/7.png)
+
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/13.png)
+
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/14.png)
+
 Now going to 4th image.
 
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/15.png)
+
 After a lot of searching on google lens,reversing image by yandex,Tineye,it seems that the pattern on the flyover here is mostly found in samarkand city in uzbekistan.Now let's try to find this image in samarkand.
+
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/16.png)
+
 Observing the little things in image like the pattern,flyover,their is mountain like terrain in background maybe we found this place using this terrain.
 
-Search samarkand on google map and after zooming little bit we can see there is large and small terrains. IF we check the small terrain we see a intersecton of road.And we got it if we check the street view we can see the exact location from where the image is captured.
+Search samarkand on google map and after zooming little bit we can see there is large and small terrains.
+
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/17.png)
+
+If we check the small terrain we see a intersecton of road.And we got it if we check the street view we can see the exact location from where the image is captured.
 Our assumption is right this image is from samarkand.
+
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/18.png)
+
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/19.png)
+
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/20.png)
 
 Till now our findings conclude many things.
 The person visit three place in same city(Tashkent) and pick a train from the station nearby to Oybex and travel to another city samarkand.
 
-If we find the station nearby Oybek, we found that Stantsiya Tashkent Pass Tsentr is the nearest station.The person must board the train from here and alight to Samarkand railway station.
+If we find the station nearby Oybek, we found that Stantsiya Tashkent Pass Tsentr is the nearest station.
+
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/21.png)
+
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/22.png)
+
+The person must board the train from here and alight to Samarkand railway station.
 This is the answer to our first question.
+
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/23.png)
 
 On searching train between two cities.I found that there is a bullet train who travel between two.
 
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/24.png)
+
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/25.png)
+
 Watched video atleast 10 times.I found that there is one place which we found easily in the train route between this two station is the road crossing.
+
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/26.png)
 
 The only thing which i can do is to search whole route on map to find this location.
 
 After searching for almost 30 min finally I found this location on map.
+
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/27.png)
+
 And this is the starting position of the video if we clearly see the house and its surrounding in map and video.
+
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/28.png)
+
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/29.png)
 
 Now calculating distance between two points and the video is of 8 seconds till this location.
 We can calculate speed of the train.As the map shows it is 304 m approx and covered in 8 second.
 So the speed of the train is 304/8 = 38m/s.
+
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/30.png)
 
 The mode of transport in 1st image must be by foot as seen in the map no vehicle there.
 In 2nd pic also the person is by foot as there is no vehicle.
 In 3rd pic the person must be using the car because he/she is in the middle of the road and trravelling far distances.
 In 4th pic we can clearly see in reflection that the person is in the car.
 
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/15.png)
+
 For calculating the distance travelled by person we first calculate the distance travelled by him/her in tashkent i.e 10.2 km approx as seen in google map.
 Now the train travel approx 300 km as seen in map.
 
+![](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/31.png)
+
 So total distance travel is aprrox 311 km.
+
+And here we answer all the questions.
 
 ---
 
