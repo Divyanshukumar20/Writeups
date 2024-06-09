@@ -491,20 +491,61 @@ Click [here](https://www.youtube.com/watch?v=myTG1LpMN7g&t=120s) to open the vid
 
 ##### Writeup:
 
+So this is a screenshot image from video. We can clearly see the date and time at which the earthquake occur.
+
 ![Photo 1](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Photo%201.png)
+
+Let's search earthquake news on this date on goolgle.
+We found that at this exact time there was an earhtquake in Vrancea,Romania.This was the same earthquake that is in the video.
+
 ![Photo 2](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Photo%202.png)
+
+After getting details of this earthquake by google search finally we get to know that this was a earthquake of magnitude **5.7**
+
 ![Photo 3](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Photo%203.png)
+
+Now let's find the location of this footage.First I try to search this image in google lens from every aspect but  it wouldn't give much info.
+
 ![Photo 4](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Photo%204.png)
+
+Then I try to search for unique things in building like this green one and the red one.
+
 ![Photo 5](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Photo%205.png)
+
+But on google lens I found nothing much.Then I try google searching of unique building in Maldova,chisinau,where earthquake came.
+
+After a lot of scrolling finally I found a building which looks like red one above.
+
 ![Photo 6](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Photo%206.png)
+
 ![Photo 7](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Photo%207.png)
+
+Getting more details of building.The building name is Atrium.
+
 ![Photo 8](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Photo%208.png)
+
+Again after searching about building I finally successfull to locate this on google map.
+
 ![Photo 9](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Photo%209.png)
+
+Now analyzing the video again and again I found the direction from the building at which the camera placed.
+
 ![Photo 10](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Photo%2010.png)
+
+Following the black path we get our location If we see clearly the black path is same road as in video.
+And the red building is same as marked here.
+We can relate this map to the picture by connecting every site like car parking that blue building.
+Using all this connection we conclude that The yellow one is the building where the camera was fitted.
+
+![Photo 5](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Photo%205.png)
+
+Luckily, the street view of this yellow building is available. If we see the street view it clearly shows that the footage is from here only.
+
 ![Photo 11](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Photo%2011.png)
+
 ![Photo 12](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Photo%2012.png)
 
-
+So the coordinates of this place is **47.017594,28.852750**
 
 ---
 ### Exercise 26
