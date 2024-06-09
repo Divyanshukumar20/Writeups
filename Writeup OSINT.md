@@ -373,7 +373,7 @@ On January 19, 2023, a journalist with almost 140k followers on Twitter shared a
 The photo is not of the event described by the journalist.
 a) Verify the statement above.
 
-Click [here](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/challenge_files/osintexercise006.webp) to open the photo on a new tab.
+Click [here](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/challenge_files/osintexercise006.webp) to open the photo.
 
 ##### Writeup:
 
