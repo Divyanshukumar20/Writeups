@@ -360,11 +360,11 @@ The City name is *Hirosaki*.
 
 ---
 
-### Grahlix Exercises
-
-### Exercise 6
+###Grahlix Exercises
 
 ---
+
+### Exercise 6
 
 ##### Task review:
 
@@ -373,7 +373,57 @@ On January 19, 2023, a journalist with almost 140k followers on Twitter shared a
 The photo is not of the event described by the journalist.
 a) Verify the statement above.
 
+Click [here]() to open the photo on a new tab.
+
+##### Writeup:
+
+If we carefully observed the image then it doesn't seems like a suicide attack here the car blasted so badly.
+
+Anyway if we search this image using reverse image search, on Tineye we got 378 results and after sorting with date the first image shows a date of 2009. But the Task image shows it is of 2023 image.
+
+If we click on the first link of tineye we got to know that this is not a image of pakistan suicide attack but it is a image of Explosions occurred on Sunday near the office of the governor of Baghdad and the Ministry of Justice.It says that explosive devices were planted in cars parked near the buildings which seems true.
+
+Hence this is a not a image of pakistan this statement is proved.
+
+---
+
+### Exercise 4
+
+##### Task Review:
+
+This is a photo of a resort located on an island.
+a) What is the name of the resort?
+b) What are the coordinates of the island?
+c) In which cardinal direction was the camera facing when the photo was taken?
+
 Click here to open the photo on a new tab.
+
+##### Writeup:
+
+---
+
+### Exercise 3
+
+##### Task Review:
+
+##### Writeup:
+
+---
+### Exercise 14
+
+##### Task Review:
+
+##### Writeup:
+
+---
+### Exercise 26
+
+##### Task Review:
+
+##### Writeup:
+
+---
+
 
 
 
