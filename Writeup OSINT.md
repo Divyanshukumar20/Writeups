@@ -449,7 +449,7 @@ Now searching this on google map we got this.This is the satellite view of that 
 
 ![pic 3](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/pic%203.png)
 
-Given picture is must be the entrance of the building but here two ways and we don't know hich one is for what purpose. We have to find exact coordinates where handshake takes place.
+Given picture is must be the entrance of the building but here two ways and we don't know which one is for what purpose. We have to find exact coordinates where handshake takes place.
 
 ![pic 4](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/pic4.png)
 
