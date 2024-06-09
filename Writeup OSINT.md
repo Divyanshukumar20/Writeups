@@ -380,8 +380,12 @@ Click [here](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_fil
 If we carefully observed the image then it doesn't seems like a suicide attack here the car blasted so badly.
 
 Anyway if we search this image using reverse image search, on Tineye we got 378 results and after sorting with date the first image shows a date of 2009. But the Task image shows it is of 2023 image.
+![Result car blast](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Result%20car%20balst.png)
 
 If we click on the first link of tineye we got to know that this is not a image of pakistan suicide attack but it is a image of Explosions occurred on Sunday near the office of the governor of Baghdad and the Ministry of Justice.It says that explosive devices were planted in cars parked near the buildings which seems true.
+
+![Website baghdad](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Website_baghdad.png)
+![scroll down](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Scroll%20down%20baghdad.png)
 
 Hence this is a not a image of pakistan this statement is proved.
 
@@ -396,21 +400,22 @@ a) What is the name of the resort?
 b) What are the coordinates of the island?
 c) In which cardinal direction was the camera facing when the photo was taken?
 
-Click [here]() to open the photo on a new tab.
+Click [here](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/challenge_files/osint-exercise-004-big-picture.jpg) to open the photo on a new tab.
 
 ##### Writeup:
 
 As done previously again we are going to search this image on google lens.
 And if we see the exact matches we can clearly see the facebook page which display the resort name i.e Oan Resort.
-![GL_resort]()
+
+![GL_resort](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Gl_island.png)
 
 Check its coordinates on google and we got it.
 
-![Coordinates]()
+![Coordinates](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Coordinates.png)
 
 Now if we try in google map satellite to adjust the island map as same as image we get this.
 
-![Google map island]()
+![Google map island](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/3d%20view_oan%20isalnd.png)
 
 It is almost same as image the compass shows we are facing northwest direction.So camera also must be facing in northwest direction.
 
