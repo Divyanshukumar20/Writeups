@@ -356,7 +356,25 @@ Going to the fourth question we already know the name of city where his home is,
 
 ![wifi details](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Wi-Fi%20Details.png)
 
-The City name is *Hirosaki*
+The City name is *Hirosaki*.
+
+---
+
+### Grahlix Exercises
+
+### Exercise 6
+
+---
+
+##### Task review:
+
+On January 19, 2023, a journalist with almost 140k followers on Twitter shared an image of a destroyed vehicle amidst a large cloud of smoke and fire. The tweet said: “BREAKING: TTP carried out a suicide attack on a police post in Khyber city of Pakistan that killed three Pakistani police officers.“
+
+The photo is not of the event described by the journalist.
+a) Verify the statement above.
+
+Click here to open the photo on a new tab.
+
 
 
 
