@@ -481,7 +481,30 @@ So the answer is President Complex Turkey,Coordinates (39.931175, 32.799750)
 
 ##### Task Review:
 
+The video below was recorded during an earthquake.
+Please find the answer to the following questions:
+
+a) What was the magnitude of this earthquake?
+b) What are the coordinates of where the camera was likely located in order to record this scene?
+
+Click [here](https://www.youtube.com/watch?v=myTG1LpMN7g&t=120s) to open the video.
+
 ##### Writeup:
+
+![Photo 1](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Photo%201.png)
+![Photo 2](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Photo%202.png)
+![Photo 3](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Photo%203.png)
+![Photo 4](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Photo%204.png)
+![Photo 5](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Photo%205.png)
+![Photo 6](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Photo%206.png)
+![Photo 7](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Photo%207.png)
+![Photo 8](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Photo%208.png)
+![Photo 9](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Photo%209.png)
+![Photo 10](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Photo%2010.png)
+![Photo 11](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Photo%2011.png)
+![Photo 12](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Photo%2012.png)
+
+
 
 ---
 ### Exercise 26
