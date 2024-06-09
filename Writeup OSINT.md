@@ -268,13 +268,13 @@ Next,We have to find the BSSID of the his home's Wi-Fi as we already have SSID o
 
 Let's click on the first result.Now we are into wigle website.First I make account on this website.
 
-![Wigle weebsite]()
+![Wigle website](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/Wigle%20website.png)
 
 After that finding the BSSID using advance search option and write the SSID here and enter. After little bit scrolling we see there is one result we get and the BSSID is written here as *84:af:ec:34:fc:f8*.
 
-![Searching using SSID]()
+![Searching using SSID](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/SSID%20search.png)
 
-![BSSID]()
+![BSSID](https://github.com/Divyanshukumar20/Writeups/blob/main/Writeups_files_OSINT/BSSID%20found.png)
 
 * Answer 1: SakuraLoverAiko
 
